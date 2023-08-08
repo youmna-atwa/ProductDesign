@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(243 234 227);
+}
+
+.image-side {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+.Structure-Layout {
+    place-items: center;
+    display: grid;
+    min-height:80vh
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 350px;
+    min-width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 12px;
+    background-color: #fff;
+}
+.pricing-layout h4 {
+ color: hsl(34, 4%, 63%);
+ letter-spacing: 5px;
+ font-size: 15px;
+ font-family: 'Montserrat' , sans-serif;
+
+
+}
+.pricing-layout {
+    padding: 20px 25px;
+}
+.Description p {
+    font-size: 14px;
+    color: rgb(91 94 103);
+    line-height: 1.5;
+    font-family: 'Montserrat' , sans-serif;
+
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.price span:nth-child(1) {
+    color: rgb(61 129 104);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Fraunces' , sans-serif;
+
+
+}
+.price span:nth-child(2) {
+    font-size: 12px;
+   color: rgb(91 94 103);
+   text-decoration: line-through;
+}
+.pricing-layout button{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    border: none;
+    padding: 13px 10px;
+    width: 90%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 20px;
+    gap: 5px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+
+}
+@media screen and (min-width:320px) and (max-width:500px) {
+    .image-side {
+        background-image: url(./images/image-product-mobile.jpg);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+        height: 60vh;
+
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        min-width: 500px;
+    }
+}
